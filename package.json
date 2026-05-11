@@ -1,0 +1,28 @@
+{
+  "name": "leadsai",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "db:generate": "turbo run db:generate --filter=@leadsai/database",
+    "db:push": "turbo run db:push --filter=@leadsai/database",
+    "db:seed": "turbo run db:seed --filter=@leadsai/database",
+    "lint": "turbo run lint"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^20",
+    "@types/qrcode": "^1.5.6",
+    "turbo": "^2.5.0",
+    "typescript": "^5.7.0"
+  },
+  "packageManager": "pnpm@9.15.0",
+  "workspaces": [
+    "apps/*",
+    "services/*",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

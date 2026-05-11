@@ -1,0 +1,21 @@
+{
+  "name": "@leadsai/workflow-service",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@leadsai/database": "workspace:*",
+    "@leadsai/shared": "workspace:*",
+    "ioredis": "^5.4.1",
+    "dotenv": "^16.4.5",
+    "tsx": "^4.19.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  }
+}
