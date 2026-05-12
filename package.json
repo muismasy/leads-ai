@@ -4,6 +4,10 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "start": "echo 'Please set a custom start command in Railway for each service'",
+    "start:gateway": "pnpm --filter @leadsai/gateway start",
+    "start:wa-connector": "pnpm --filter @leadsai/wa-connector start",
+    "start:ai-engine": "pnpm --filter @leadsai/ai-engine start",
     "db:generate": "turbo run db:generate --filter=@leadsai/database",
     "db:push": "turbo run db:push --filter=@leadsai/database",
     "db:seed": "turbo run db:seed --filter=@leadsai/database",
